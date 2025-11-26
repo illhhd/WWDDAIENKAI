@@ -100,7 +100,7 @@ export const Hero: React.FC<HeroProps> = ({ theme }) => {
                  Date: 2026.02.18
                </p>
                <button className="bg-[#CCFF00] text-black px-8 py-4 font-bold hover:bg-white transition-colors">
-                 INITIALIZE SEQUENCE ->
+                 INITIALIZE SEQUENCE -&gt;
                </button>
             </motion.div>
 
