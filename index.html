@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WWDAIENKAI 2026 - New Media. New Community.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Noto+Sans+JP:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+      
+      :root {
+        --bg-color: #050505;
+        --text-color: #ffffff;
+        --accent-color: #E60012;
+        --secondary-bg: #111111;
+        --border-color: rgba(255, 255, 255, 0.2);
+        --font-main: 'Inter', 'Noto Sans JP', sans-serif;
+        --font-display: 'Inter', sans-serif;
+      }
+
+      [data-theme="flux"] {
+        --bg-color: #000000;
+        --text-color: #e0e0e0;
+        --accent-color: #CCFF00;
+        --secondary-bg: #0a0a0a;
+        --border-color: #333333;
+        --font-main: 'Space Mono', monospace;
+        --font-display: 'Space Mono', monospace;
+      }
+
+      [data-theme="print"] {
+        --bg-color: #F2F2F2;
+        --text-color: #1a1a1a;
+        --accent-color: #B83A24;
+        --secondary-bg: #E5E5E5;
+        --border-color: #d1d1d1;
+        --font-main: 'Inter', sans-serif;
+        --font-display: 'Playfair Display', serif;
+      }
+      
+      body {
+        font-family: var(--font-main);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        overflow-x: hidden;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+
+      .font-display { font-family: var(--font-display); }
+      .text-accent { color: var(--accent-color); }
+      .bg-accent { background-color: var(--accent-color); }
+      .border-accent { border-color: var(--accent-color); }
+
+      .vertical-text {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--secondary-bg);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent-color);
+      }
+
+      /* Marquee Animation */
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        animation: marquee 30s linear infinite;
+      }
+      .animate-marquee-reverse {
+        animation: marquee 30s linear infinite reverse;
+      }
+
+      /* Utility for text stroke */
+      .text-stroke {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+        color: transparent;
+      }
+      [data-theme="print"] .text-stroke {
+        -webkit-text-stroke: 1px rgba(0,0,0,0.2);
+      }
+      
+      .text-stroke-hover:hover {
+        -webkit-text-stroke: 0px;
+        color: var(--accent-color);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
