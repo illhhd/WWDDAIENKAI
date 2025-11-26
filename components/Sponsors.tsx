@@ -10,7 +10,7 @@ interface SponsorsProps {
   theme?: Theme;
 }
 
-export const Sponsors: React.FC<SponsorsProps> = ({ theme }) => {
+export const Sponsors: React.FC<SponsorsProps> = () => {
   return (
     <section id="sponsors" className="border-t pb-24" style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)', borderColor: 'var(--border-color)' }}>
       <div className="py-4 border-b mb-12" style={{ backgroundColor: 'var(--secondary-bg)', borderColor: 'var(--border-color)' }}>

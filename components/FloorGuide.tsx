@@ -32,7 +32,7 @@ const floors: FloorInfo[] = [
   }
 ];
 
-export const FloorGuide: React.FC<FloorGuideProps> = ({ theme }) => {
+export const FloorGuide: React.FC<FloorGuideProps> = () => {
   const [activeFloor, setActiveFloor] = useState<FloorInfo>(floors[0]);
 
   return (

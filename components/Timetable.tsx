@@ -19,7 +19,7 @@ const scheduleData: ScheduleItem[] = [
   { time: "21:30", title: "AFTER PARTY @ Robin Club", floor: "VIP", type: "performance" }
 ];
 
-export const Timetable: React.FC<TimetableProps> = ({ theme }) => {
+export const Timetable: React.FC<TimetableProps> = () => {
   return (
     <section id="timetable" className="py-24 border-t" style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)', borderColor: 'var(--border-color)' }}>
       <div className="container mx-auto px-6">

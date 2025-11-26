@@ -6,7 +6,7 @@ interface ConceptProps {
   theme?: Theme;
 }
 
-export const Concept: React.FC<ConceptProps> = ({ theme }) => {
+export const Concept: React.FC<ConceptProps> = () => {
   return (
     <section id="concept" className="py-32 relative overflow-hidden border-t" style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)', borderColor: 'var(--border-color)' }}>
       

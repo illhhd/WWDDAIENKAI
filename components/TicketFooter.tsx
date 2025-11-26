@@ -6,7 +6,7 @@ interface TicketFooterProps {
   theme?: Theme;
 }
 
-export const TicketFooter: React.FC<TicketFooterProps> = ({ theme }) => {
+export const TicketFooter: React.FC<TicketFooterProps> = () => {
   return (
     <footer className="pt-24 pb-12 border-t" style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)', borderColor: 'var(--accent-color)' }}>
       <div className="container mx-auto px-6 text-center">

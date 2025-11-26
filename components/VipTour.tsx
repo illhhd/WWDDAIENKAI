@@ -1,5 +1,4 @@
 import React from 'react';
-import { SectionTitle } from './ui/SectionTitle';
 import { Button } from './ui/Button';
 import { Theme } from '../App';
 
