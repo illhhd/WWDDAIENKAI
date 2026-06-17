@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# build output / vendored runtime (再生成物)
+static_site/
+tailwindcdn.js
